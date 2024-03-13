@@ -1,0 +1,293 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Estilos para las tarjetas de formulario */
+
+.form-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 400px;
+    width: 100%;
+    /* Hace que todas las tarjetas tengan el mismo ancho */
+}
+
+/* Estilos para los títulos de sección */
+
+.section-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos para los campos de entrada */
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #6e93b5;
+    box-shadow: 0 0 5px rgba(110, 147, 181, 0.5);
+}
+
+/* Estilos para los botones */
+
+.form-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6e93b5;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #58798f;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* Estilos para el cuerpo de la página */
+
+body {
+    background-color: #f0f8ff;
+    /* Color de fondo celeste */
+    font-family: Arial, sans-serif;
+    /* Fuente del texto */
+    margin: 0;
+    /* Elimina el margen predeterminado */
+    padding: 0;
+    /* Elimina el relleno predeterminado */
+    background-image: url('https://img.freepik.com/vector-gratis/marco-fondo-azul-fluido_53876-99019.jpg?w=740&t=st=1710040527~exp=1710041127~hmac=de57373a9c52d4d4524d09c0d09d8294a6957da83a7e134d27577f3146098df8e');
+    background-size: cover;
+    background-position: center;
+    /* Ajusta el tamaño y la posición de la imagen de fondo */
+    background-attachment: fixed;
+    /* Fija la imagen de fondo para que no se mueva con el desplazamiento */
+}
+
+
+/* Estilos para la barra de navegación */
+
+nav {
+    background-color: #1a237e;
+    /* Fondo azul oscuro */
+    padding: 10px 0;
+    /* Espaciado interno */
+}
+
+nav ul {
+    list-style-type: none;
+    /* Elimina los marcadores de lista */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    /* Muestra los elementos en línea */
+    margin-right: 20px;
+    /* Espacio entre elementos */
+}
+
+nav ul li a {
+    color: white;
+    /* Color del texto */
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
+    font-weight: bold;
+    /* Texto en negrita */
+    padding: 5px 10px;
+    /* Espaciado interno */
+}
+
+
+/* Estilos para el contenedor principal */
+
+.container {
+    max-width: 800px;
+    /* Ancho máximo del contenedor */
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
+    padding: 20px;
+    /* Espacio alrededor del contenido */
+    text-align: center;
+    /* Alinea el texto al centro */
+}
+
+
+/* Estilos para el título principal */
+
+h1 {
+    font-size: 36px;
+    /* Tamaño del título */
+    text-align: center;
+    /* Alineación centrada */
+    margin-top: 50px;
+    /* Espacio superior */
+}
+
+
+/* Estilos para los subtítulos */
+
+h2 {
+    font-size: 36px;
+    /* Tamaño del título */
+    text-align: center;
+    /* Alineación centrada */
+    margin-top: 50px;
+    /* Espacio superior */
+}
+
+
+/* Estilos para los formularios */
+
+form {
+    /* Espacio superior */
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    /* Usamos flexbox para centrar los formularios */
+    /* Alineamos los elementos verticalmente */
+    /* Centramos los elementos horizontalmente */
+    /* Alineamos el texto a la izquierda */
+}
+
+
+/* Estilos para las etiquetas de los campos de entrada */
+
+label {
+    display: block;
+    /* Muestra las etiquetas en una línea nueva */
+    margin-bottom: 5px;
+    /* Espacio inferior */
+}
+
+
+/* Estilos para los campos de entrada */
+
+input[type="text"],
+textarea {
+    width: 50%;
+    /* Ancho del 50% de la pantalla */
+    max-width: 300px;
+    /* Ancho máximo */
+    padding: 10px;
+    /* Espaciado interno */
+    margin-bottom: 10px;
+    /* Espacio inferior */
+    border: 1px solid #ccc;
+    /* Borde del campo */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    box-sizing: border-box;
+    /* Incluye el borde en el tamaño total */
+}
+
+
+/* Estilos para los botones */
+
+button {
+    /* Espaciado dentro del botón */
+    /* Tamaño del texto del botón */
+    /* Color de fondo verde */
+    /* Color del texto */
+    /* Sin borde */
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    /* Bordes redondeados */
+    /* Cambia el cursor al pasar el ratón */
+}
+
+
+/* Estilos para los botones cuando se pasa el ratón */
+
+button:hover {
+    background-color: #45a049;
+    /* Cambia el color de fondo al pasar el ratón */
+}
+
+
+/* Estilos para la tabla de resultados */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    /* Ancho completo */
+    /* Colapsa los bordes de la tabla */
+    /* Espacio inferior */
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    /* Borde de la celda */
+    /* Espaciado interno */
+    /* Alineación del texto a la izquierda */
+}
+
+table th {
+    background-color: #f2f2f2;
+    /* Fondo gris claro para las cabeceras */
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+    /* Fondo gris claro para filas pares */
+}
+
+
+/* Estilos para el footer */
+
+footer {
+    /* Color de fondo azul oscuro */
+    background-color: #1a237e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* Color del texto blanco */
+    /* Alineación centrada */
+    /* Espaciado interno */
+}
+
+
+/* Estilos responsivos */
+
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 90%;
+        /* Ancho máximo del contenedor */
+    }
+}

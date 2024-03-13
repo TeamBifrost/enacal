@@ -1,0 +1,85 @@
+body {
+  background-color: $color-blanco-t1;
+  /* Color de fondo celeste */
+  font-family: Arial, sans-serif;
+  /* Fuente del texto */
+  margin: 0;
+  /* Elimina el margen predeterminado */
+  padding: 0;
+  /* Elimina el relleno predeterminado */
+  background-image: url("https://img.freepik.com/vector-gratis/marco-fondo-azul-fluido_53876-99019.jpg?w=740&t=st=1710040527~exp=1710041127~hmac=de57373a9c52d4d4524d09c0d09d8294a6957da83a7e134d27577f3146098df8e");
+  background-size: cover;
+  background-position: center;
+  /* Ajusta el tamaño y la posición de la imagen de fondo */
+  background-attachment: fixed;
+  /* Fija la imagen de fondo para que no se mueva con el desplazamiento */
+
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  form {
+    display: flex;
+    margin: 30px 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  button {
+    color: $color-blanco-Base;
+    background-color: $color-btn-celeste;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: $color-btn-celeste;
+
+    &:hover {
+      background-color: $color-btn-celeste-hover;
+    }
+  }
+
+  .btn-result {
+    background-color: $color-verde-Base;
+
+    &:hover {
+      background-color: $color-verde-hover;
+    }
+  }
+  //  Estilos para las tablas
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    thead {
+      tr {
+        th {
+          background-color: $color-blanco-t2;
+          border: 1px solid $color-gris-t2;
+          padding: 8px;
+          text-align: left;
+        }
+      }
+    }
+    tbody {
+      tr:nth-child(even) {
+        background-color: $color-blanco-t2;
+      }
+      tr {
+        td {
+          border: 1px solid $color-gris-t2;
+          padding: 8px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

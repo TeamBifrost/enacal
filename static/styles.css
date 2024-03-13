@@ -1,0 +1,197 @@
+@charset "UTF-8";
+body {
+  background-color: #f0f8ff;
+  /* Color de fondo celeste */
+  font-family: Arial, sans-serif;
+  /* Fuente del texto */
+  margin: 0;
+  /* Elimina el margen predeterminado */
+  padding: 0;
+  /* Elimina el relleno predeterminado */
+  background-image: url("https://img.freepik.com/vector-gratis/marco-fondo-azul-fluido_53876-99019.jpg?w=740&t=st=1710040527~exp=1710041127~hmac=de57373a9c52d4d4524d09c0d09d8294a6957da83a7e134d27577f3146098df8e");
+  background-size: cover;
+  background-position: center;
+  /* Ajusta el tamaño y la posición de la imagen de fondo */
+  background-attachment: fixed;
+  /* Fija la imagen de fondo para que no se mueva con el desplazamiento */
+}
+body h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 50px;
+}
+body form {
+  display: flex;
+  margin: 30px 0;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+body button {
+  color: #fff;
+  background-color: #6e93b5;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: #6e93b5;
+}
+body button:hover {
+  background-color: #58798f;
+}
+body .btn-result {
+  background-color: #4caf50;
+}
+body .btn-result:hover {
+  background-color: #45a049;
+}
+body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+body table thead tr th {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+body table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+body table tbody tr td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+nav {
+  margin-bottom: 30px;
+  background-color: #1a237e;
+  padding: 10px 0;
+  margin-bottom: 30 px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 90%;
+  }
+}
+.container .form-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+.container .form-card .section-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+.container .form-card form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.container .form-card form .form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.container .form-card form .form-input:focus {
+  outline: none;
+  border-color: #6e93b5;
+  box-shadow: 0 0 5px rgba(110, 147, 181, 0.5);
+}
+.container .form-card form input[type=text],
+.container .form-card form textarea {
+  width: 50%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.container .form-card form .form-button {
+  background-color: #6e93b5;
+}
+.container .form-card form .form-button:hover {
+  background-color: #58798f;
+}
+
+.container2 {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+.container2 .hj-container .all-Tables {
+  padding: 0 30px;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+}
+.container2 .hj-container .all-Tables .scroll-table {
+  display: block;
+  overflow: auto;
+}
+.container2 .hj-container .all-Tables .scroll-table .table-fixed {
+  position: sticky;
+  left: 0;
+  z-index: 1; /* Asegura que la columna fija esté por encima del contenido desplazable */
+  background-color: #b5ffba;
+  border: 1px solid #818181; /* Puedes personalizar el color de fondo según tus preferencias */
+}
+
+footer {
+  background-color: #1a237e;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 30 px;
+}
+
+/*# sourceMappingURL=styles.css.map */

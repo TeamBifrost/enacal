@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resultados de la búsqueda</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}" />
+    <link rel="stylesheet" type="text/css" href="../static/styles.css" />
+</head>
+
+<body>
+    <div class="container2">
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+            </ul>
+        </nav>
+        <div class="hj-container">
+            <!-- Barra de navegación -->
+
+            <h1>Resultados de la búsqueda</h1>
+
+            <div class="all-Tables">
+                <div class="scroll-table">
+                    <!-- Mostrar resultados -->
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th class="table-fixed">RutaNombre</th>
+                                {% for usrnom in resultados[0].keys() %} {% if usrnom !=
+                                'RutaNombre' %}
+                                <th>{{ usrnom }}</th>
+                                {% endif %} {% endfor %}
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for resultado in resultados %}
+                            <tr>
+                                <td class="table-fixed">{{ resultado['RutaNombre'] }}</td>
+                                {% for usrnom in resultados[0].keys() %} {% if usrnom !=
+                                'RutaNombre' %}
+                                <td>{{ resultado[usrnom] }}</td>
+                                {% endif %} {% endfor %}
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Botón de regresar -->
+            <form action="/" method="get">
+                <button class="btn-result" type="submit">Volver al inicio</button>
+            </form>
+        </div>
+        <footer>
+            Realizado por Rommel Vargas / Dorian Reyes / SocioAnonimo &copy;
+            Derechos de autor
+        </footer>
+    </div>
+</body>
+
+</html>

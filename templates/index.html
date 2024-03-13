@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Usuarios</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
+            <!-- Puedes agregar más elementos de la barra de navegación aquí -->
+        </ul>
+    </nav>
+
+    <div style="padding: 40px 0;">
+        <div class="container">
+            <div class="form-card">
+                <h1 class="titulo">Busqueda por Libro</h1>
+                <form action="/buscar" method="post">
+                    <label for="FacGrNombre">FacGrNombre:</label>
+                    <select id="FacGrNombre" name="FacGrNombre" class="form-input" required>
+                        <option value="">Selecciona una opción</option>
+                        {% for opcion in opciones_facgrnombre %}
+                        <option value="{{ opcion }}">{{ opcion }}</option>
+                        {% endfor %}
+                    </select>
+                    <label for="RutaNombre">RutaNombre:</label>
+                    <input type="text" id="RutaNombre" name="RutaNombre" class="form-input" required>
+                    <button type="submit" class="form-button">Buscar</button>
+                </form>
+            </div>
+
+            <div class="form-card">
+                <h1 class="section-title">Búsqueda por listado</h1>
+                <form action="/buscar" method="post">
+                    <label for="rutas">Listado de Rutas (separadas por comas):</label>
+                    <textarea id="rutas" name="rutas" rows="4" class="form-input"></textarea>
+                    <button type="submit" class="form-button">Buscar Listado</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Realizado por Rommel Vargas / Dorian Reyes / SocioAnonimo &copy; Derechos de autor
+    </footer>
+</body>
+
+</html>

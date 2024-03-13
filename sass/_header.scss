@@ -1,0 +1,21 @@
+nav {
+    margin-bottom: 30px;
+    background-color: $color-Azul-Base;
+    padding: 10px 0;
+    margin-bottom: 30 px;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline;
+            margin-right: 20px;
+            a {
+                color: $color-blanco-Base;
+                text-decoration: none;
+                font-weight: bold;
+                padding: 5px 10px;
+            }
+        }
+    }
+}
